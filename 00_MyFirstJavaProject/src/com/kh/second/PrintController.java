@@ -1,0 +1,8 @@
+package com.kh.second;
+
+public class PrintController { // 클래스 블록 안에서 바로 호출 할 경우 오류
+	
+	public void printMyName() {
+		System.out.print("아토 뭉치 두리");
+	}
+}

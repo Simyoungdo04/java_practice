@@ -1,0 +1,55 @@
+package com.kh.variable;
+
+public class Variable {
+	// 변수: Memory(RAM)에 값을 저장하기 위한 *공간
+	public void 바지를저장하는기능() {
+		String 옷장 = "긴바지";
+		String 행거 = "반바지";
+		System.out.println(행거);
+	}
+	
+	// 변수를 사용했을 때 장점
+	
+	// 점심메뉴 출력 프로그램(키오스크)
+	public void findLunchMenu() {
+		// 1. 메뉴들을 출력(메뉴명, 가격)
+		// 2. 메뉴판을 보고 주문을 했다고 가정
+		// 3. 내야할 금액 출력
+		System.out.println("--- 변수를 사용하기 전 ---");
+		System.out.println("메뉴판 > ");
+		System.out.println("1. 트리플 치즈버거 세트(15000)");
+		System.out.println("2. 빅맥 세트(8397)");
+		System.out.println("3. 슈슈버거 세트(9210)");
+		
+		// 트리플 치즈버거	4명
+		// 빅맥 		    9명
+		// 1955         4명
+		
+		System.out.println("======================");
+		System.out.println("트리플 치즈버거 4개 주문");
+		System.out.println((15000 * 4) + "원 입니다");
+		System.out.println("빅맥 9개 주문");
+		System.out.println((8397 * 9) + "원 입니다");
+		System.out.println("슈슈버거 4개 주문");
+		System.out.println((9210 * 4) + "원 입니다");
+		System.out.println("======================");
+		
+		System.out.println("======================");
+		System.out.println("--- 변수를 사용하기 ---");
+		// 메뉴명과 가격이라는 값을 담을 공간
+		// 변수를 선언하고 변수공간에 값을 대입해서 사용
+		String setOne = "슈슈버거 세트";
+		int setOnePrice = 9800;
+		String setTwo = "빅맥 세트";
+		int setTwoPrice = 8800;
+		
+		System.out.println("메뉴판 > ");
+		System.out.println(setOne + " | 가격: " + setOnePrice);
+		System.out.println(setOne + " | 가격: " + setTwoPrice);
+		System.out.println();
+		System.out.println();
+		
+		
+	}
+	
+}

@@ -1,0 +1,9 @@
+package com.kh.variable;
+
+public class Variable {
+	// 변수: Memory(RAM)에 값을 저장하기 위한 *공간
+	public void savePants() {
+		
+	}
+	
+}

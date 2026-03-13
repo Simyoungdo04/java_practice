@@ -1,0 +1,6 @@
+public class MyFirstClass {
+	
+	{
+		System.out.println("a");
+	}
+}
