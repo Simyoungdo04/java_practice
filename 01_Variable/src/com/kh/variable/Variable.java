@@ -8,7 +8,7 @@ public class Variable {
 	
 	// 변수: Memory(RAM)에 값을 저장하기 위한 *공간
 	public void 바지를저장하는기능() {
-		String 옷장 = "긴바지";
+		//String 옷장 = "긴바지";
 		String 행거 = "반바지";
 		System.out.println(행거);
 	}
@@ -227,10 +227,10 @@ public class Variable {
 		// - 값을 변경하지 않을 변수 공간
 		
 		// kh가 설립된 년도
-		int startYear = 1998;
-		startYear = 2026;
+		//int startYear = 1998;
+		//startYear = 2026;
 		
-		final int START_YEAR = 1998;	
+		//final int START_YEAR = 1998;	
 		// START_YEAR = 2026; 바뀔 수 없음
 	}
 }
