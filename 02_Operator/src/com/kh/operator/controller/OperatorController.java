@@ -288,28 +288,40 @@ public class OperatorController {
 	 * 
 	 * [표현식]
 	 * 조건식 - 조건식이 true일 경우 결과값 : 조건식이 false일 경우 결과값
+	 * 
+	 * 조건문 : 값에 따라 연산을 처리하는 방식
+	 * 		  결과 값이 true 일 경우 첫 번째 문장을 처리
+	 * 		  결과 값이 false일 경우 두 번째 문장을 처리
+	 * 
 	 */
 	
-	
-	
+	// 치킨
+	public void triple() {
+		System.out.println("깐부치킨에 오신것을 환영합니다");
+		System.out.println("1. AI치킨");
+		System.out.println("2. 바삭한 식스팩 치킨");
+		System.out.println("3. 후라이드 치킨");
+		
+		// Ctrl + Shift + O : import 자동완성 단축키
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("\n   ※숫자만 입력※\n메뉴 번호를 입력해주세요. >");
+		int menuNum = sc.nextInt();
+		// 계획
+		// 사용자가 메뉴번호로
+		// 1번을 입력하면 AI치킨을 주문하셨습니다.
+		// 2번을 입력하면 바삭한 식스팩 치킨을 주문하셨습니다.
+		// 3번을 입력하면 후라이드 치킨을 주문하셨습니다.
+		// 1, 2, 3이 아니면 없는 메뉴를 주문하셨습니다.
+		// 이렇게 출력하기
+		// System.out.println(menuNum);
+		
+		// 메뉴번호가 1번일 시 AI치킨~ 나오게하고 1번이 아닐 시 없는 메뉴 입니다 라고 출력
+		String selected = menuNum == 1 ? "AI치킨을 주문하셨습니다."
+						: menuNum == 2 ? "바삭한 식스팩 치킨을 주문하셨습니다."
+						: menuNum == 3 ? "후라이드 치킨을 주문하셨습니다."
+						: "없는 메뉴입니다."; // 삼항 연산자
+		
+		System.out.println(selected);
+	}	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

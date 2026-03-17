@@ -12,7 +12,8 @@ public class Run {
 		// opc.comparison();
 		// opc.logical();
 		// opc.andOper();
-		opc.orOper();
+		// opc.orOper();
+		opc.triple();
 		
 	}
 }
