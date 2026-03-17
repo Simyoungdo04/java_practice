@@ -1,6 +1,8 @@
 package com.kh.chap01.run;
 
-import com.kh.chap01.condition.ConditionElse;
+import com.kh.chap01.condition.ConditionSwitch;
+
+// import com.kh.chap01.condition.ConditionElse;
 
 // import com.kh.chap01.condition.ConditionIf;
 
@@ -11,9 +13,13 @@ public class Run {
 		// ConditionIf ci = new ConditionIf();
 		// ci.method1();
 		// ci.quiz();
-		ConditionElse ce = new ConditionElse();
+		// ConditionElse ce = new ConditionElse();
 		// ce.method1();
-		ce.method2();
+		// ce.method2();
+		// ce.ageCheck();
+		ConditionSwitch cs = new ConditionSwitch();
+		cs.method0();
+		
 	}
 
 }

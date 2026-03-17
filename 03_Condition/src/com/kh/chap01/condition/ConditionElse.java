@@ -75,16 +75,83 @@ public class ConditionElse {
 		String phoneNum = sc.nextLine();
 		// System.out.println(phoneNum);
 		// 만약에 사용자가 7777을 입력하면 1등을 출력하기
+		String message = "등 축하합니다!";
 		if(phoneNum.equals("7777")) {
-			System.out.println("축하합니다! 1등 입니다~");
-		} else if(phoneNum.equals("1111")) {
-			System.out.println("축하합니다! 2등 입니다~");
-		} else if(phoneNum.equals("9999")) {
-			System.out.println("축하합니다! 3등 입니다~");
+			System.out.println("1" + message);
+		} else if(phoneNum.equals("1111")) { // 만약에 사용자가 1111을 입력하면 2등을 출력하기
+			System.out.println("2" + message);
+		} else if(phoneNum.equals("9999")) { // 만약에 사용자가 9999을 입력하면 3등을 출력하기
+			System.out.println("3" + message);
 		} else {
 			System.out.println("아쉽지만 다음기회에...");
+		}	
+	}
+	
+	public void ageCheck() {
+		// 사용자에게 나이(정수)를 입력받고
+		// 입력받은 나이에 따라서 각기 다른 내용을 출력하기
+		// 1 ~ 12  : 어린이 입니다
+		// 13 ~ 17 : 청소년 입니다
+		// 18 ~    : 성인입니다
+		// 0, -    : 잘 못 입력하셨습니다
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("나이를 입력해주세요. >");
+		int age = sc.nextInt();
+		
+		// System.out.println(age);
+		
+		// ageCheck_V1
+		/*
+		if(1 <= age && age <= 12) {
+			System.out.println("어린이 입니다.");
+		} else if(13 <= age && age <= 17) {
+			System.out.println("청소년 입니다.");
+		} else if(18 <= age) {
+			System.out.println("성인 입니다.");
+		} else {
+			System.out.println("값을 잘 못 입력하셨습니다.");
 		}
+		*/
+		
+		// ageCheck_V2 - 범위가 큰 쪽 부터 입력
+		if(age <= 0) {
+			System.out.println("올바른 나이를 입력해주세요.");
+		} else if (age >= 18) {
+			System.out.println("성인 입니다.");
+		} else if (age <= 12) {
+			System.out.println("어린이 입니다.");
+		} else {
+			System.out.println("청소년 입니다.");
+		}
+		
 		
 	}
 	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
