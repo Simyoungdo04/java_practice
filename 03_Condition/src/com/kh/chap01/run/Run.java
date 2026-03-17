@@ -1,6 +1,8 @@
 package com.kh.chap01.run;
 
-import com.kh.chap01.condition.ConditionSwitch;
+import com.kh.chap02.loop.LoopFor;
+
+// import com.kh.chap01.condition.ConditionSwitch;
 
 // import com.kh.chap01.condition.ConditionElse;
 
@@ -17,9 +19,13 @@ public class Run {
 		// ce.method1();
 		// ce.method2();
 		// ce.ageCheck();
-		ConditionSwitch cs = new ConditionSwitch();
+		// ConditionSwitch cs = new ConditionSwitch();
 		// cs.method0();
-		cs.findByName();
+		// cs.findByName();
+		// cs.login();
+		LoopFor lf = new LoopFor();
+		// lf.method0();
+		lf.method1();
 		
 	}
 
