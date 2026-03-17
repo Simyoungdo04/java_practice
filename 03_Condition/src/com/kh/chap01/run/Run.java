@@ -18,7 +18,8 @@ public class Run {
 		// ce.method2();
 		// ce.ageCheck();
 		ConditionSwitch cs = new ConditionSwitch();
-		cs.method0();
+		// cs.method0();
+		cs.findByName();
 		
 	}
 
