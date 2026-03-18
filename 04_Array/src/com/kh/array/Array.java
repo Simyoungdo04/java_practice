@@ -198,24 +198,104 @@ public class Array {
 		/*
 		 * love
 		 */
+		// 한 번 할당 받은 배열의 크기를 변경할 수 없음
 		char[] love = new char[4];
 		love[0] = 'l';
 		love[1] = 'o';
 		love[2] = 'v';
 		love[3] = 'e';
 		System.out.println(Arrays.toString(love));
-		
-		
-		
+		love[1] = 'i';
+		System.out.println(Arrays.toString(love));
+		System.out.println(love.hashCode());
+		// char형의 기본값 '', 정수형의 기본값은 0, 실수형의 기본값은 0.0
+		love = new char[5];
+		love[4] = 'r';
+		System.out.println(Arrays.toString(love));
+		System.out.println(love.hashCode());
+		/*
+		 * 연결이 끊긴 기존의 배열은 일정 시간이 지나면 GarbageCollection(GC)가 알아서 삭제
+		 * 자동 메모리 관리
+		 * 기존 배열식별자에 할당만 새롭게 한다면 => 기존 참조하고 있던 연결이 끊기고 새로운 배열을 가리킴
+		 */
+		// char형 배열 => 들어갈 수 있는 값 : 주소값
+		//     	     => 들어갈 수 있는 타입 : char형 배열
+		// 			 => 유일한 예외 == null
+		love = null;
+		// null : 아무것도 존재하지 않음을 의미하는 값
+		System.out.println(love);
 		
 	}
 	
+	public void method5() {
+		
+		// 배열은 언제쓸까
+		// 사용해야하는 값과 개수가 명확한 경우에만 사용
+		// (웹 기준) 임시비밀번호 발급, 인증코드 발급 => 이때 말고는 잘 안씀
+		// 이 수업에서 자바가 끝나면 과정이 끝날때 까지 단 한번도 배열을 직접적으로 사용하지 않을 것이다
+		// 하지만 눈에만 보이지 않을 뿐 항상 배열을 사용하고 있음 자바에서는
+		
+		// 사용을 한다면 직접 인덱스에 값을 대입하는 방식보다는
+		int[] arr = {100, 200, 300};
+		System.out.println(Arrays.toString(arr));
+	}
 	
+	/*
+	 * 배열 복사
+	 * 
+	 * 1. 얕은 복사* 변수/자료형 이후 가장 중요한 내용
+	 * 
+	 * 2. 깊은 복사
+	 */
+	public void method6() {
+		int[] origin = {1, 2, 3};
+		// new int[3];
+		// origin[0] = 1; origin[1] = 2; ~; 
+		System.out.println(Arrays.toString(origin));
+		
+		// 얕은 복사로 배열을 복사
+		int[] copy = origin;
+		System.out.println(Arrays.toString(copy));
+		
+		origin[2] = 33;
+		System.out.println(Arrays.toString(origin));
+		System.out.println(Arrays.toString(copy));
+		// 얕은 복사 => 주소값을 대입하는 것이기 때문에 가리키고 있는 대상이 같다
+	}
 	
-	
-	
-	
-	
+	// 2. 깊은 복사 => 깊은 복사는 보통 기존 배열의 크기보다 큰 배열로 복사하는 경우가 많음
+	public void method7() {
+		int[] origin = {1, 2, 3};
+		int[] copy = new int[6];
+		
+		for(int i = 0; i < 3; i++) {
+			copy[i] = origin[i];
+		}
+//		copy[0] = origin[0];
+//		copy[1] = origin[1];
+//		copy[2] = origin[2];
+		System.out.println(Arrays.toString(copy));
+		
+		int[] copy2 = new int[10];
+		
+		// 네이밍 컨벤션 == 클래스 / 인터페이스 == 첫글자가 대문자
+		/*
+		 * System
+		 * String
+		 * ~
+		 */
+		// System.arraycopy(origin, 0, copy2, 0, 3);
+		// arraycopy(원본배열명, 원본에서 복사 시작할 인덱스, 카피배열명, 카피배열에서 복사될 인덱스, 복사요소 개수);
+		System.arraycopy(origin, 0, copy2, 0, 3);
+		System.out.println(Arrays.toString(copy2));
+		
+		// Arrays.copyOf(원본배열명, 배열 길이);
+		int[] copy3 = Arrays.copyOf(origin, 15);
+		System.out.println(Arrays.toString(copy3));
+		
+		int[] copy4 = origin.clone();
+		System.out.println(Arrays.toString(copy4));
+	}
 	
 	
 	

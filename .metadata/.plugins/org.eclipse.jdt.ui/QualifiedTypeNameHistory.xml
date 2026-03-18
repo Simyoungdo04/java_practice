@@ -4,4 +4,6 @@
     <fullyQualifiedTypeName name="com.kh.variable.Variable"/>
     <fullyQualifiedTypeName name="com.kh.operator.controller.OperatorController"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="com.kh.array.Array"/>
 </qualifiedTypeNameHistroy>

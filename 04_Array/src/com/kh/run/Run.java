@@ -9,6 +9,9 @@ public class Run {
 		// ary.method2();
 		// ary.crateLottoNumber();
 		// ary.method3();
-		ary.method4();
+		// ary.method4();
+		// ary.method5();
+		// ary.method6();
+		ary.method7();
 	}
 }
