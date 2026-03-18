@@ -119,11 +119,8 @@ public class LoopFor {
 				return;
 			} else {
 				System.out.println("없는 메뉴를 선택하셨습니다.");
-			}
-			
+			}	
 		}
-		
-		
 	}
 	
 	
@@ -146,34 +143,3 @@ public class LoopFor {
 	
 	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

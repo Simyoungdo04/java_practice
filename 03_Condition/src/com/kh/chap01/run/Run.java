@@ -1,6 +1,6 @@
 package com.kh.chap01.run;
 
-import com.kh.chap02.loop.LoopFor;
+import com.kh.chap03.escape.EscapeBreak;
 
 // import com.kh.chap01.condition.ConditionSwitch;
 
@@ -23,11 +23,23 @@ public class Run {
 		// cs.method0();
 		// cs.findByName();
 		// cs.login();
-		LoopFor lf = new LoopFor();
+		// LoopFor lf = new LoopFor();
 		// lf.method0();
 		// lf.method1();
 		// lf.gugudan();
-		lf.mainMenu();
+		// lf.mainMenu();
+		// LoopWhile lw = new LoopWhile();
+		// lw.method1();
+		// lw.method2();
+		// lw.method3();
+		// lw.lotto();
+		EscapeBreak eb = new EscapeBreak(); 
+		// eb.method1();
+		eb.checkId();
+		
+		
+		
+		
 		
 	}
 
