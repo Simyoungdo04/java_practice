@@ -5,5 +5,9 @@ import com.kh.array.Array;
 public class Run {
 	public static void main(String[] args) {
 		Array ary = new Array();
+		// ary.method1();
+		// ary.method2();
+		// ary.crateLottoNumber();
+		ary.method3();
 	}
 }
