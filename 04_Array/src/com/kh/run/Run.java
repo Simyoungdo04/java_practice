@@ -8,6 +8,7 @@ public class Run {
 		// ary.method1();
 		// ary.method2();
 		// ary.crateLottoNumber();
-		ary.method3();
+		// ary.method3();
+		ary.method4();
 	}
 }
