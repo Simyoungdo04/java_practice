@@ -25,7 +25,9 @@ public class Run {
 		// cs.login();
 		LoopFor lf = new LoopFor();
 		// lf.method0();
-		lf.method1();
+		// lf.method1();
+		// lf.gugudan();
+		lf.mainMenu();
 		
 	}
 
