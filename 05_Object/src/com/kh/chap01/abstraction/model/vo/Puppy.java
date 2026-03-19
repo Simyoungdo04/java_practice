@@ -13,7 +13,6 @@ package com.kh.chap01.abstraction.model.vo;
  * 
  * }
  */
-
 public class Puppy {
 	
 	// [ 필드부 ]
@@ -23,6 +22,7 @@ public class Puppy {
 	//		     public > protected > default > private
 	// 클래스 내부에 필드를 선언할 때는 반드시 접근제한자를 붙일 것
 	
+	// 배열보다 좋은 점 => 여러가지 타입을 넣을 수 있다.
 	// 이름, 종, 성별, 몸무게, 나이
 	public String name;    // 강아지의 이름을 저장할 필드
 	public String species; // 강아지의 종을 저장할 필드
