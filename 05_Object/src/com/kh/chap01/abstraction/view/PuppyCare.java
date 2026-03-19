@@ -34,31 +34,22 @@ public class PuppyCare {
 			System.out.println("몸무게 : " + puppy.weight);
 			System.out.println("🦴🦴🦴🦴🦴🦴🦴🦴🦴🦴🦴🦴🦴🦴🦴🦴🦴🦴🦴🦴🦴🦴🦴🦴");
 			System.out.println();
-			break;
+			
+			System.out.println("메뉴를 선택해주세요");
+			if(puppy.weight > 10) {
+				System.out.println("과체중입니다. 앉기를 추천드립니다.");
+			}
+			System.out.print("1. 짖기 / 2. 앉기 / 3. 프로그램 종료 > ");
+			int menuNum = sc.nextInt();
+			sc.nextLine();
+			System.out.println();
+			
+			switch(menuNum) {
+			case 1 : puppy.bark(); break;
+			case 2 : puppy.sit(); break;
+			case 3 : return;
+			default : System.out.println("메뉴를 다시 선택해주세요");
+			}
 		}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
-	
-	
-	
-	
-	
-	
-	
 }
