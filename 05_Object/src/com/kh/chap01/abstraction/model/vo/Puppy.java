@@ -30,9 +30,20 @@ public class Puppy {
 	public int weight; 	   // 강아지의 몸무계를 저장할 필드
 	public int age;		   // 강아지의 나이를 저장할 필드
 	
+	// [ 생성자부 ]
 	
 	
 	
+	// [ 메소드부 ] ==> Puppy가 수행할 수 있는 행위(기능)
+	// 짖기, 앉기
+	public void bark() { // bark 메소드 입장에서 이름은 클래스 내부에 있다.
+		System.out.println(name + " 짖다.");
+	}
+	
+	public void sit() {
+		System.out.println(name + " 앉다.");
+		weight--;
+	}
 }
 
 

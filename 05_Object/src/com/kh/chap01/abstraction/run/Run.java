@@ -19,11 +19,10 @@ public class Run {
 		puppy.name = "나폴레옹";
 		System.out.println(puppy.name);
 		
-		// 종 : 방하르, 이름 : 징기스칸, 나이 : 5, 몸무게 : 15, 성별 : 수
+		// 종 : 방하르, 이름 : 징기스칸, 나이 : 5, 몸무게 : 40, 성별 : 수
 		Puppy khan = new Puppy();
 		khan.name = "징기스칸";
 		System.out.println(khan.name);
-		
 		
 		// 정수값 => 정수자료형 int, short, byte, long
 		// 실수값 => 실수자료형
@@ -37,6 +36,19 @@ public class Run {
 		// 객체 지향 프로그래밍 => 현실세계에서의 개체를 속성과 행위를 가진 객체로 생성하여
         //					 객체간의 관계를 맺고 상호작용을 통해 프로그래밍을 하는 개발*방법론*
 		
+		puppy.bark();
+		khan.bark();
+		
+		puppy.weight = 8;
+		khan.weight = 40;
+		
+		System.out.println(puppy.name + "의 몸무게 : " + puppy.weight + "kg");
+		System.out.println(khan.name + "의 몸무게 : " + khan.weight + "kg");
+		
+		puppy.sit();
+		khan.sit();
+		khan.sit();
+		System.out.println(khan.name + "의 몸무게 : " + khan.weight + "kg");
 	}
 
 }
