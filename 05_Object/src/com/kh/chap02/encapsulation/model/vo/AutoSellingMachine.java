@@ -58,7 +58,7 @@ public class AutoSellingMachine {
 		// Scope안에서는 해당 영역안에 있는 지역변수가 식별자 우선권을 가진다.
 		// this : 해당 객체의 주소값을 가리키는 역할
 		this.price = price;
-		System.out.println(price);
+		// System.out.println(price);
 	}
 	
 	// name 필드를 기록 및 수정할 수 있는 메소드
@@ -89,18 +89,57 @@ public class AutoSellingMachine {
 	 */
 	
 	// 메소드를 호출한 곳으로 name필드값을 돌려주고 싶음 => return "돌려주고싶은필드값"
-	public String getName() {
-		return "네임필드값";
+	public String getName() { // getter는 this를 굳이 붙이지 않는다. => 더 짧기 때문 == 실수할 확률이 줄어든다.
+		return name;
+	}
+	
+	public int getAmount() {
+		return amount;
+	}
+	
+	public int getPrice() {
+		return price;
+	}
+	
+	// 필드들의 접근제한자를 private로 변경한 뒤
+	// 각각의 필드들에 대한 getter() / setter() 를 구현하면
+	// 캡슐화 끝
+	/*
+	 * 1. 값을 숨긴다 => 필드의 접근제한자를 private로 선언
+	 * 
+	 * 2. 메소드를 통해 필드에 접근할 수 있게 만든다. => getter() / setter() 구현
+	 * 
+	 * 데이터를 숨김 => 객체간의 결합도가 낮아짐 => 책임을 분리시킴
+	 */
+	
+	public String info() { // return 할때는 1개 밖에 못 가져간다.
+		String info = "자판기 = [제품명 : " + name + ", 가격 : " + price + ", 재고 : " + amount + "]";
+		return info;
 	}
 	
 	
 	
 	
 	
-	
-	
-	
-	
-	
-	
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

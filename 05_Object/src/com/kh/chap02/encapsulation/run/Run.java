@@ -50,8 +50,15 @@ public class Run {
 		
 		// 메소드는 stack 영역에 올라가고 객체는 heap 영역에 올라간다. ***
 		
+		// 수량
+		int amount = asm.getAmount();
+		System.out.println(amount);
 		
+		// 가격
+		int price = asm.getPrice();
+		System.out.println(price);
 		
+		System.out.println(asm.info());
 		
 		
 		
