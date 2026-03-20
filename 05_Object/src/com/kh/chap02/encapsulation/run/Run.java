@@ -44,7 +44,13 @@ public class Run {
 		// 함수 == BuiltInFunction
 		// 자바의 클래스 == 자료형
 		// 메소드 == 특정 자료형만 수행할 수 있은 기능
-		asm.getName();
+		String name = asm.getName();
+		System.out.println(name);
+		// System.out.println(asm.getName());
+		
+		// 메소드는 stack 영역에 올라가고 객체는 heap 영역에 올라간다. ***
+		
+		
 		
 		
 		

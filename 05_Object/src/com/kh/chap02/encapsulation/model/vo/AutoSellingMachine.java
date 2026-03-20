@@ -88,10 +88,9 @@ public class AutoSellingMachine {
 	 * 3. VO패키지 안에 존재하는 클래스 라면 getter는 무조건 꼭 만들어야한다.
 	 */
 	
-	// 메소드를 호출한 곳으로 name필드값을 돌려주고 싶음
-	public void getName() {
-		
-		return;
+	// 메소드를 호출한 곳으로 name필드값을 돌려주고 싶음 => return "돌려주고싶은필드값"
+	public String getName() {
+		return "네임필드값";
 	}
 	
 	
