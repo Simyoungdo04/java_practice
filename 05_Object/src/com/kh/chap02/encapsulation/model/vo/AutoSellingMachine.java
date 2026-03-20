@@ -55,11 +55,45 @@ public class AutoSellingMachine {
 	public void setPrice(int price) { // void 리턴타입 반환형
 						// parameter, 매개변수
 						// 매개변수는 메소드 호출 시 초기화가 강제됨**
-		System.out.println(price);
 		// Scope안에서는 해당 영역안에 있는 지역변수가 식별자 우선권을 가진다.
 		// this : 해당 객체의 주소값을 가리키는 역할
 		this.price = price;
+		System.out.println(price);
 	}
+	
+	// name 필드를 기록 및 수정할 수 있는 메소드
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	// amount필드를  기록 및 수정할 수 있는 메소드
+	public void setAmount(int amount) {
+		this.amount = amount;
+	}
+	
+	// 두 개 이상의 필드값을 변경하는 메소드 이름에 set이 붙으면 안됨
+	/*
+	 * public void setPriceAndAmount(int price, int amount) {
+	 * 		setPrice(price);
+	 * 		setAmount(amount);
+	 * }
+	 */
+	
+	// 데이터를 반환해주는 기능의 메소드 : getter()
+	/*
+	 * 규칙
+	 * 
+	 * 1. getter()는 접근제한자 public을 사용한다.
+	 * 2. get필드명으로 짓되, 낙타봉표기법(camelCase)를 사용한다.
+	 * 3. VO패키지 안에 존재하는 클래스 라면 getter는 무조건 꼭 만들어야한다.
+	 */
+	
+	// 메소드를 호출한 곳으로 name필드값을 돌려주고 싶음
+	public void getName() {
+		
+		return;
+	}
+	
 	
 	
 	

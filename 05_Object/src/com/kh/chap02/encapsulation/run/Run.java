@@ -38,8 +38,13 @@ public class Run {
 		// getter / setter라는 메소드 구현하기
 		// 라면 가격 1500원으로 세팅하고 싶다.
 		asm.setPrice(1500); // argument, 인자값, 인수
+		asm.setName("삼양라면");
+		asm.setAmount(5);
 		
-		
+		// 함수 == BuiltInFunction
+		// 자바의 클래스 == 자료형
+		// 메소드 == 특정 자료형만 수행할 수 있은 기능
+		asm.getName();
 		
 		
 		
