@@ -77,6 +77,7 @@ public class OperatorController {
 
 		System.out.println("학생 한 명당 받을 수 있는 사탕 개수: " + (candy / student) + "개");
 		System.out.println("남은 사탕 개수: " + (candy % student) + "개");
+		sc.close();
 	}
 
 	public void inDecrease() {
@@ -244,6 +245,7 @@ public class OperatorController {
 		boolean result = (userNum > 0) && (userNum % 2 == 0);
 		//System.out.println((userNum > 0) && (userNum % 2 == 0));
 		System.out.println("입력값이 0보다 크면서 짝수인가요? >" + result);
+		sc.close();
 	}
 	
 	public void andOper() {
@@ -259,6 +261,7 @@ public class OperatorController {
 		// boolean check = (userNumber >= 1) && (userNumber <= 10);
 		boolean check = (0 < userNumber) && (userNumber <= 10);
 		System.out.println("입력값이 1 ~ 10 사이의 값인가요? >" + check);
+		sc.close();
 	}
 	
 	public void orOper() {
@@ -273,12 +276,13 @@ public class OperatorController {
 		boolean result = (letter == 'a') || (letter == 'A');
 		
 		System.out.println("입력한 글자가 'A' 또는 'a'입니까? >" + result);
+		sc.close();
 	}
 	
 	public void tip() {
-		int num = 10;
+		// int num = 10;
 		
-		boolean result = false && (num > 0); // dead code 의미가 없음
+		// boolean result = false && (num > 0); // dead code 의미가 없음
 		
 		
 	}
@@ -323,5 +327,6 @@ public class OperatorController {
 						: "없는 메뉴입니다."; // 삼항 연산자
 		
 		System.out.println(selected);
+		sc.close();
 	}	
 }

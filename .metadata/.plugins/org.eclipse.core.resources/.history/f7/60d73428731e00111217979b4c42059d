@@ -1,7 +1,0 @@
-package com.kh.second;
-
-public class PrintController {
-	
-	System.out.print("아토 뭉치 두리");
-	
-}

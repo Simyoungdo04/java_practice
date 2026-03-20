@@ -111,7 +111,7 @@ public class Casting {
 		System.out.println('a' == 'b');
 		System.out.println(2 == (int)'2');
 		System.out.println((char)2 == '2');
-		System.out.println((int)'2' == '2');
+		// System.out.println((int)'2' == '2');
 		
 		// 강제 형 변환: 큰 크기의 자료형 => 작은 크기의 자료형
 		// 명시적 형변환이라고도 한다

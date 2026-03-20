@@ -36,7 +36,7 @@ public class InputKeyBoard {
 		sc.nextLine(); // 버퍼에 남은 개행문자 날리기
 		String address = sc.nextLine();
 		System.out.println(address + "로 배달합니다.");
-		
+		sc.close();
 	}
 	
 	
