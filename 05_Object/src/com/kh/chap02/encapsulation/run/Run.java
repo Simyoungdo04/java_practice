@@ -59,9 +59,5 @@ public class Run {
 		System.out.println(price);
 		
 		System.out.println(asm.info());
-		
-		
-		
-		
 	}
 }

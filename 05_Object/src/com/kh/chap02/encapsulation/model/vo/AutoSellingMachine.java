@@ -116,30 +116,4 @@ public class AutoSellingMachine {
 		String info = "자판기 = [제품명 : " + name + ", 가격 : " + price + ", 재고 : " + amount + "]";
 		return info;
 	}
-	
-	
-	
-	
-	
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
