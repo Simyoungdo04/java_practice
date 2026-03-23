@@ -15,7 +15,7 @@ public class Recipt {
 	// getter() / setter() / info()
 	
 	// setter()
-	public void setPyment(String payment) {
+	public void setPayment(String payment) {
 		this.payment = payment;
 	}
 	
@@ -49,7 +49,7 @@ public class Recipt {
 	}
 	
 	public String info() {
-		String info = "가게이름 : " + storeName + "\n가격 : " + price + "\n결제수단 : " + payment + "\n날짜 : " + date;		
+		String info = "가격 : " + price + "\n결제수단 : " + payment + "\n가게이름 : " + storeName +  "\n날짜 : " + date;		
 		return info;
 	}
 	
