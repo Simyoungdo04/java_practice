@@ -45,8 +45,17 @@ public class MethodController {
 		return method2();
 	}
 	
-	// 3. 
+	// 3. 매개변수 O, 반환값 X
+	/*
+	 * public void setName(String name) { // setter()
+	 * 		this.name = name 
+	 * }
+	 */
 	
+	// 4. 매개변수 O, 반환값 O
+	public int method4(int num) {
+		return num + 54;
+	}
 	
 	
 	
