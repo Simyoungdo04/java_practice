@@ -5,5 +5,6 @@ import com.kh.chap07.view.TicketView;
 public class Run {
 	public static void main(String[] args) {
 		TicketView tv = new TicketView();
+		tv.mainMenu();
 	}
 }
