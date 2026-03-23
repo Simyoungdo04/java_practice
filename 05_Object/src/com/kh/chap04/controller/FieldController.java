@@ -8,22 +8,46 @@ package com.kh.chap04.controller;
  * 
  * 필드(멤버변수, 인스턴스 변수)
  * 
+ * 생성시점 => new 키워드를 사용해서 해당 객체를 생성하는 순간 heap에 할당
+ * 소멸시점 => 객체가 소멸 될 때 => GC이 동작을 안하면 OOM(out of Memory) 발생
+ * GC == GarbigeCollection
+ * 
  * static필드(클래스 변수)
  * 
+ * 메모리에 메타스페이스에 올라간다.
+ * static 이라는 예약어가 붙어있는 필드
+ * 
+ * 			ClassLoader가 불러옴
+ * 생성시점 => static필드 호출 시점에 Metaspace(static)에 올라감
+ * 소멸시점 => 블록(프로그램)이 종료되면 소멸 => ClassLoader를 GC가 소멸시키는 시점 
+ * 
  * 지역변수
+ * 
+ * 생성시점 => 특정 영역( { } ) 내부에서 선언되는 시점에 메모리 영역에 할당 -> stack
+ * 소멸시점 => 특정 영역( { } )가 종료될 때 => stack메모리에서 소멸하는 시점에
  * 
  */
 public class FieldController {
 	
+	public static String str = "static";
+	// static 키워드는 공유의 목적이 강함.
+	// 프로그램 구동중 계속 값을 사용하기 위해 씀
+	public static final String JAVA_VERSION = "21"; // final == 상수
+	// public final static 예약어 순서는 상관 없음
+	
+	// static : 프로그램 전체에서 공유 / 글자가 누워있음 
+	// final : 절대 못바꿈 / 글자가 두꺼움(Bold)
+	// 무조건 선언과 동시에 초기화를 진행해야함
+	
 	public int global; // 필드
 	
-	public void cheackVariable(int parameter) {
+	public void checkVariable(int parameter) { // 메소드가 호출될 때 초기화를 해야함
 		
-		int local = 0; // 지역변수
+		int local = 1; // 지역변수
 		
-		System.out.println(global);
-		System.out.println(local);
-		System.out.println(parameter);
+		System.out.println(global);    // 필드
+		System.out.println(local); 	   // 지역변수
+		System.out.println(parameter); // 매개변수(지역변수)
 	}
 	
 	
