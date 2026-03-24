@@ -38,5 +38,8 @@ public class AosGame {
 		this.charactorCount = charactorCount;
 	}
 	
+	public String info() {
+		return "게임정보 [게임명 : " + gameName + ", 운영사 : " + publisher + ", 캐릭터 수 : " + charactorCount + "]";
+	}
 	
 }
