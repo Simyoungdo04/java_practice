@@ -5,7 +5,10 @@ package com.kh.chap02.model.vo;
 public class AosGame extends Game {
 	private int charactorCount;
 
-	public AosGame() {}
+	public AosGame() {
+		super(); // Game(); 게임클래스 기본생성자
+		System.out.println("자식클래스");
+	}
 
 	public AosGame(int charactorCount) {
 		this.charactorCount = charactorCount;

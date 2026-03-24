@@ -6,9 +6,11 @@ package com.kh.chap02.model.vo;
  */
 public class Game {
 	// 공통필드
-	private String gameName;
-	private String publisher;
-	public Game() {}
+	public String gameName;
+	public String publisher;
+	public Game() {
+		System.out.println("부모클래스");
+	}
 	
 	public Game(String gameName, String publisher) {
 		this.gameName = gameName;
