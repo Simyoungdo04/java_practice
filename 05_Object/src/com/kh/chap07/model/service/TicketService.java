@@ -37,7 +37,9 @@ public class TicketService {
 			if(tickets[i] == null) {
 				tickets[i] = ticket;
 				return 1;
+			}
 		}
+		return 0;
 		/*
 		if(tickets[0] == null) {
 			tickets[0] = ticket;
@@ -50,7 +52,6 @@ public class TicketService {
 			return 1;
 		}
 		*/
-		return 0;
 	}
 	
 	public Ticket printTicket() {
@@ -96,5 +97,9 @@ public class TicketService {
 		}
 		*/
 		return null;
+	}
+	
+	public Ticket[] findAll() {
+		return tickets;
 	}
 }

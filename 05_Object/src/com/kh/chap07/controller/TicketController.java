@@ -14,4 +14,9 @@ public class TicketController {
 		// 서비스한테 티켓 받아오기
 		return ts.printTicket();
 	}
+	
+	public Ticket[] findAll() {
+		Ticket[] tickets = ts.findAll();
+		return tickets;
+	}
 }

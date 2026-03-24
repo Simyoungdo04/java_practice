@@ -16,6 +16,7 @@ public class TicketView {
 		while(true) {
 			System.out.println("\n=================================");
 			System.out.println("티켓 발권 서비스입니다.");
+			System.out.println("0. 티켓 전체조회하기");
 			System.out.println("1. 티켓 추가하기");
 			System.out.println("2. 티켓 발급하기");
 			System.out.println("3. 프로그램 종료");
@@ -24,6 +25,7 @@ public class TicketView {
 			sc.nextLine();
 			
 			switch(menuNo) {
+			case 0 : findAll(); break;
 			case 1 : saveView(); break;
 			case 2 : printTicket(); break;
 			case 3 : System.out.println("프로그램을 종료합니다."); sc.close(); return;
@@ -72,4 +74,27 @@ public class TicketView {
 			System.out.println("\n티켓이 존재하지 않습니다.");
 		}
 	}
+	
+	private void findAll() {
+		Ticket[] tickets = tc.findAll();
+		for(int i = 0; i < tickets.length; i++) {
+			if(tickets[i] != null) {
+				System.out.println(tickets[i].info());
+			}
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
