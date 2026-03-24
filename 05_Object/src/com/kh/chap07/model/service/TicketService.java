@@ -3,9 +3,17 @@ package com.kh.chap07.model.service;
 import com.kh.chap07.model.vo.Ticket;
 
 public class TicketService {
-	private Ticket firstTicket;
-	private Ticket secondTicket;
-	private Ticket thirdTicket;
+	/*
+	 * private Ticket firstTicket; 
+	 * private Ticket secondTicket; 
+	 * private Ticket thirdTicket;
+	 */
+	private Ticket[] tickets = new Ticket[3];
+	
+	
+	// 배열
+	// 인데그 개념이 존재, 변수의 나열(메모리 연속된 공간에 저장), 공간의 크기를 못바꿈
+	// 물리구조와 논리구조가 같다, 같은 자료형의 값을 담을 수 있다.
 	
 	// 사용하는 기술에 따라서 돌려주는 값이 달라짐
 	// 1. 정수값
@@ -13,6 +21,7 @@ public class TicketService {
 	public int saveTicket(Ticket ticket) {
 		// 1. 티켓 개수 확인
 		// 2. 티켓 개수가 2 이하라면 티켓 등록
+		/*
 		if(firstTicket == null) {
 			this.firstTicket = ticket;
 			return 1;
@@ -23,6 +32,24 @@ public class TicketService {
 			this.thirdTicket = ticket;
 			return 1;
 		}
+		*/
+		for(int i = 0; i < tickets.length; i++) {
+			if(tickets[i] == null) {
+				tickets[i] = ticket;
+				return 1;
+		}
+		/*
+		if(tickets[0] == null) {
+			tickets[0] = ticket;
+			return 1;
+		} else if(tickets[1] == null) {
+			tickets[1] = ticket;
+			return 1;
+		} else if (tickets[2] == null) {
+			tickets[2] = ticket;
+			return 1;
+		}
+		*/
 		return 0;
 	}
 	
@@ -31,6 +58,29 @@ public class TicketService {
 		// 1. 티켓이 발급된게 있나 없나 확인 후
 		// 2. 발급된게 있으면 티켓의 주소값을 반환해주고
 		// 3. 주소값을 담은 필드 비워주기
+		for(int i = 0; i < tickets.length; i++) {
+			if(tickets[i] != null) {
+				Ticket ticket = tickets[i];
+				tickets[i] = null;
+				return ticket;
+			}
+		}
+		/*
+		if(tickets[0] != null) {
+			Ticket ticket = tickets[0];
+			tickets[0] = null;
+			return ticket;
+		} else if(tickets[1] != null) {
+			Ticket ticket = tickets[1];
+			tickets[1] = null;
+			return ticket;
+		} else if(tickets[2] != null) {
+			Ticket ticket = tickets[2];
+			tickets[2] = null;
+			return ticket;
+		} 
+		*/
+		/*
 		if(firstTicket != null) {
 			Ticket ticket = firstTicket;
 			firstTicket = null;
@@ -44,6 +94,7 @@ public class TicketService {
 			thirdTicket = null;
 			return ticket;
 		}
+		*/
 		return null;
 	}
 }
