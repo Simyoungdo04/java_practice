@@ -2,10 +2,12 @@ package com.kh.chap07.view;
 
 import java.util.Scanner;
 
+import com.kh.chap07.controller.TicketController;
 import com.kh.chap07.model.vo.Ticket;
 
 public class TicketView {
 	private Scanner sc = new Scanner(System.in);
+	private TicketController tc = new TicketController();
 	// 화면에 메인메뉴를 출력해주는 메소드
 	public void mainMenu() {
 		// 두 가지 기능 구현
@@ -23,6 +25,7 @@ public class TicketView {
 			
 			switch(menuNo) {
 			case 1 : saveView(); break;
+			case 2 : printTicket(); break;
 			case 3 : System.out.println("프로그램을 종료합니다."); sc.close(); return;
 			default : System.out.println("없는 메뉴를 선택하셨습니다.");
 			}
@@ -31,7 +34,7 @@ public class TicketView {
 	
 	// 티켓을 추가할 수 있는 화면을 출력해주는 기능
 	private void saveView() {
-		System.out.print("티켓 가격을 입력해주세요 > ");
+		System.out.print("\n티켓 가격을 입력해주세요 > ");
 		int price = sc.nextInt();
 		sc.nextLine();
 		System.out.print("기내식을 입력해주세요 > ");
@@ -42,28 +45,31 @@ public class TicketView {
 		String service = sc.nextLine();
 		
 		Ticket ticket = new Ticket(meal, service, seatNumber, price);
-		System.out.println(ticket.info());
+		// System.out.println(ticket.info());
+		// 등록된 티켓이 3장이 아니라면 어딘가에 저장하기
+		
+		// 객체에서 다른 객체로 값을 전달할 때는 메소드를 호출해서 넘겨주자
+		
+		// System.out.println("v : " + ticket);
+		int result = tc.saveTicket(ticket);
+		
+		// 성공 실패 여부 출력
+		if(result == 1) {
+			System.out.println("\n티켓 등록 성공!");
+		} else {
+			System.out.println("\n티켓 등록 실패..");
+		}
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	private void printTicket() {
+		// 컨트롤러한테 서비스에서 티켓정보를 받아 오기
+		Ticket ticket = tc.printTicket();
+		
+		// 티켓이 있을수도 있음
+		if(ticket != null) {
+			System.out.println(ticket.info());
+		} else {
+			System.out.println("\n티켓이 존재하지 않습니다.");
+		}
+	}
 }
