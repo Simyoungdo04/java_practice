@@ -9,7 +9,7 @@ public class Run {
 	public static void main(String[] args) {
 		Webtoon webtoon = new Webtoon("화산귀환", "LICO", "수요일");
 		NaverWebtoon nw = new NaverWebtoon("전지적 독자 시점", "UMI", "수요일", "현금");
-		KakaoWebtoon kw = new KakaoWebtoon("수린당 성군전", "일링스", "수요일", true);
+		KakaoWebtoon kw = new KakaoWebtoon("수린당 군전", "일링스", "수요일", true);
 		
 		System.out.println(webtoon.info());
 		System.out.println(nw.info());
