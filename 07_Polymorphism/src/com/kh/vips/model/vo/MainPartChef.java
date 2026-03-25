@@ -6,6 +6,6 @@ public class MainPartChef extends Chef {
 	}
 	@Override
 	public void cooking() {
-		System.out.println("요리시작");
+		System.out.println(getName() + "요리시작");
 	}
 }
