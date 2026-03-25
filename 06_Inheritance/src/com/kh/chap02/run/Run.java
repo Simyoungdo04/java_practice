@@ -16,7 +16,7 @@ public class Run {
 		
 		RpgGame rg = new RpgGame("와우", "블리자드", 80);
 		System.out.println(rg.info());
-		// 
+		// 자식클래스에 메소드를 재정의 했을 경우
 		// 자식클래스에 재정의한 메소드가 우선권을 가져서 호출됨******
 		/*
 		 * 상속

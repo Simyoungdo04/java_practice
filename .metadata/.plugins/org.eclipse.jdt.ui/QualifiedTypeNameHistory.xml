@@ -9,4 +9,8 @@
     <fullyQualifiedTypeName name="com.kh.chap04.controller.FieldController"/>
     <fullyQualifiedTypeName name="com.kh.chap05.model.vo.Member"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="com.kh.chap02.model.vo.AosGame"/>
+    <fullyQualifiedTypeName name="com.kh.chap01.model.vo.FpsGame"/>
+    <fullyQualifiedTypeName name="com.kh.chap02.model.vo.FpsGame"/>
+    <fullyQualifiedTypeName name="com.kh.chap01.model.vo.RpgGame"/>
 </qualifiedTypeNameHistroy>
