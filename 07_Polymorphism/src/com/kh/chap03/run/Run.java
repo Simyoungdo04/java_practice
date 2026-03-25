@@ -26,7 +26,6 @@ public class Run {
 		CookingController pc = new CookingController();
 		pc.pastaCooking(); // CookingController 클래스에 의존
 		
-		
 		Cooking cook = new Pasta();
 		cook.cooking(); // Cooking 클래스에 의존
 		
