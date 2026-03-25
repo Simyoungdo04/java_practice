@@ -90,12 +90,23 @@ public class Run {
 		arr[3] = new Child2();
 		
 		for(int i = 0; i < arr.length; i++) {
+			/*
 			if(arr[i] instanceof Child1) { // instanceof => true / false
 										   // 현재 참조변수가 실질적으로 어떤 클래스 타입을 참조했는데 확인
 				((Child1)arr[i]).printChild1();
 			} else {
 				((Child2)arr[i]).printChild2();
 			}
+			*/
+			arr[i].print();
+			/*
+			 * 동적바인딩 : 프로그램 "실행 전" 컴파일 시점에 정적바인딩을 수행
+			 * 			 실질적으로 참조하는 객체가 해당 메소드를 오버라이딩 했다면 <- 전제조건
+			 * 			 프로그램 "실행 시점" 동적으로 자식클래스의 오버라이딩 된 메소드를 호출
+			 * 			 (Runtime)
+			 * 
+			 * 다형성 : 부모클래스 자료형으로 여러 자식클래스를 다루는 기술 
+			 */
 		}
 		
 		

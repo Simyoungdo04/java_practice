@@ -10,4 +10,9 @@ public class Child2 extends Parent{
 	public void printChild2() {
 		System.out.println("자식클래스2 메소드입니다.");
 	}
+	
+	@Override
+	public void print() {
+		System.out.println("Child2클래스 print 메소드");
+	}
 }

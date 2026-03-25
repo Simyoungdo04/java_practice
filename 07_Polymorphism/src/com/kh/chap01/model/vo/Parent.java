@@ -12,5 +12,7 @@ public class Parent {
 	public void printParent() {
 		System.out.println("부모클래스 메소드입니다.");
 	}
-	
+	public void print() {
+		System.out.println("부모클래스의 print메소드");
+	}
 }
