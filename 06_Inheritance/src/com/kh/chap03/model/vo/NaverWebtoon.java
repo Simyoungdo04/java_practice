@@ -3,9 +3,7 @@ package com.kh.chap03.model.vo;
 public class NaverWebtoon extends Webtoon {
 	private String payment;
 
-	public NaverWebtoon() {
-		super();
-	}
+	public NaverWebtoon() {}
 
 	public NaverWebtoon(String title, String author, String day, String payment) {
 		super(title, author, day);
