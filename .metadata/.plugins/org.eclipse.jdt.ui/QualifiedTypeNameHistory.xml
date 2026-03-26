@@ -17,4 +17,9 @@
     <fullyQualifiedTypeName name="com.kh.chap03.model.vo.SaladChef"/>
     <fullyQualifiedTypeName name="com.kh.chap03.model.vo.Chef"/>
     <fullyQualifiedTypeName name="com.kh.chap03.controlloer.CookingFactory"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="com.kh.controller.UncheckedException"/>
+    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="com.kh.controller.CheckedException"/>
 </qualifiedTypeNameHistroy>

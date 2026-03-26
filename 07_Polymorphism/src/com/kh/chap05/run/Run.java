@@ -100,18 +100,5 @@ public class Run {
 				System.out.println("재료에 치 들어간 찌개 : " + s.getName());
 			}
 		}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
 }
