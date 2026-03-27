@@ -33,16 +33,14 @@ public class Run {
 		// ue.orderByCatch();
 		
 		CheckedException ce = new CheckedException();
-		ce.readString();
+		// ce.readString();
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		// 스위치 만들기
+		// Run, SwitchView, SwitchController, SwitchVo, SwitchService(인터페이스)
+		// SwitchView : on/off확인 하기
+		// SwitchController : 
+		// SwitchVo : on : boolean
+		// SwitchService : toggle()
+		// 10% 스위치가 고장남
 	}
 }

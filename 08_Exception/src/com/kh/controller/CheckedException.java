@@ -34,8 +34,27 @@ public class CheckedException {
 	
 	private void method() throws IOException {
 		System.out.println("위험한 코드");
-		throw new RuntimeException("예외");
+		// throw new RuntimeException("예외"); // 예외를 발생시켜주는 코드
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 }
