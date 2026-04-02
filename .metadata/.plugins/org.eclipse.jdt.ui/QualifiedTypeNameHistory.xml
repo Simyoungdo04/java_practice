@@ -31,10 +31,17 @@
     <fullyQualifiedTypeName name="java.net.InetAddress"/>
     <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
     <fullyQualifiedTypeName name="java.io.BufferedReader"/>
-    <fullyQualifiedTypeName name="com.kh.football.view.FootballView"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
     <fullyQualifiedTypeName name="com.kh.football.controller.FootballController"/>
     <fullyQualifiedTypeName name="com.kh.football.model.service.FootballService"/>
     <fullyQualifiedTypeName name="com.kh.football.model.vo.FootballPlayer"/>
+    <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
+    <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
+    <fullyQualifiedTypeName name="com.kh.football.view.FootballView"/>
+    <fullyQualifiedTypeName name="com.kh.football.functional.model.service.BinFilter"/>
+    <fullyQualifiedTypeName name="com.kh.football.functional.model.dto.Material"/>
+    <fullyQualifiedTypeName name="java.lang.FunctionalInterface"/>
+    <fullyQualifiedTypeName name="java.util.function.Predicate"/>
+    <fullyQualifiedTypeName name="java.util.function.Supplier"/>
+    <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
 </qualifiedTypeNameHistroy>
