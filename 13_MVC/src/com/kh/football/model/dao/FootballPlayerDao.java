@@ -24,12 +24,6 @@ public class FootballPlayerDao {
 										+ "\t\t" + player.getPlayerNum() + "번");
 				wr.newLine();
 			}
-			
-			
 		} catch(IOException e) {}
-		
-		
-		
 	}
-	
 }

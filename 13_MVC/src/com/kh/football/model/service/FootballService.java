@@ -128,22 +128,14 @@ public class FootballService {
 		
 		// boolean result = list.get(0).getName().contains(keyword);		
 		
-		List<FootballPlayer> searched = new ArrayList();
+		List<FootballPlayer> searched = new ArrayList<FootballPlayer>();
 		
 		for(FootballPlayer player : list) {
 			if(player.getName().contains(keyword)) {
 				searched.add(player);
 			}
 		}
-		
 		List<FootballPlayer> search = list.stream().filter(f -> f.getName().contains(keyword)).toList();
-		
 		return search;
-		
-		
-		
-		
-		
-		
 	}
 }

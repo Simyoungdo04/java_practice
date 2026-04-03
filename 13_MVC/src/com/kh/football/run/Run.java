@@ -56,10 +56,5 @@ public class Run {
 		 * } 
 		 */
 		new FootballView().mainMenu();
-		
-		
-		
-		
 	}
-
 }

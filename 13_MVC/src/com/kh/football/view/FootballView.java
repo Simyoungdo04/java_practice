@@ -244,8 +244,4 @@ public class FootballView {
 			}
 		}
 	}
-	
-	
-	
-	
 }
