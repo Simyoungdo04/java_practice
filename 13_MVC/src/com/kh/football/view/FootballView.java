@@ -31,6 +31,8 @@ public class FootballView {
 			System.out.println("3. 축구선수 수정하기");
 			System.out.println("4. 축구선수 삭제하기");
 			// 축구선수 id 받아서 한명만 지우기
+			System.out.println("5. 축구선수 정보 파일로 출력하기");
+			System.out.println("6. 축구선수 검색하기");
 			System.out.println("0. 프로그램 종료하기");
 			
 			System.out.println();
@@ -48,6 +50,8 @@ public class FootballView {
 			case 2 : addFootballPlayer(); break;
 			case 3 : updateFootballPlayer(); break;
 			case 4 : deleteFootballPlayer(); break;
+			case 5 : fc.outputFootballPlayer(); break;
+			case 6 : findFootballPlayer(); break;
 			case 0 : System.out.println("프로그램을 종료합니다."); sc.close(); return;
 			default : System.out.println("없는 메뉴입니다. 다시 선택해주세요.");
 			}
@@ -218,6 +222,30 @@ public class FootballView {
 		} else {
 			System.out.println("id를 찾을 수 없습니다.");
 		}
-		
 	}
+	
+	private void findFootballPlayer() {
+		System.out.println("선수 검색 서비스입니다.");
+		System.out.println("찾고 싶은 이름의 키워드를 입력해주세요 > ");
+		String keyword = sc.nextLine();
+		List<FootballPlayer> players = fc.findFootballPlayer(keyword);
+		if(players.isEmpty()) {
+			System.out.println("==============================");
+			System.out.println("검색결과가 존재하지 않습니다.");
+			System.out.println("==============================");
+			
+		} else {
+			System.out.println();
+			System.out.println(keyword + "검색 결과입니다.");
+			for(FootballPlayer player : players) {
+				System.out.println("이름 : " + player.getName() + ", 포지션 : " + player.getPosition() 
+															   + ", 등번호 : " + player.getPlayerNum());
+				System.out.println();
+			}
+		}
+	}
+	
+	
+	
+	
 }

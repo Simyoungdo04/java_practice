@@ -84,6 +84,12 @@ public class Run {
 		Material found = bin.stream().filter(m -> m.getPrice() > 4000).findFirst().orElse(null);
 		System.out.println(found.getName());
 		
+		for(Material m : bin) {
+			if(m.getPrice() >= 3000) {
+				System.out.println(m.getName());
+			}
+		}
+		
 	}
 
 }

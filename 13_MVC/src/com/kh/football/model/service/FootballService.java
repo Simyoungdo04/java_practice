@@ -3,6 +3,7 @@ package com.kh.football.model.service;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.kh.football.model.dao.FootballPlayerDao;
 import com.kh.football.model.dto.FootballPlayerDto;
 import com.kh.football.model.vo.FootballPlayer;
 
@@ -113,5 +114,36 @@ public class FootballService {
 		return false;
 	}
 	
+	public void outputFootballPlayer() {
+		new FootballPlayerDao().outputFootballPlayer(list);
+	}
 	
+	public List<FootballPlayer> findFootballPlayer(String keyword) {
+		// 검색 => 찾아
+		// 사용자가 입력한 keyword가 포함된 FootballPlayer의 name필드값을
+		// 하나하나 순회하면서 전부다 검사를통해서 만약에 name필드값에
+		// 사용자가 입력한 keyword가 포함되어있다면 VO객체의 주소값을
+		// 전부다 View로 반환 해주어야하는데
+		// 하나도 없을 수도 있는데 엄청 많을 수도 있음
+		
+		// boolean result = list.get(0).getName().contains(keyword);		
+		
+		List<FootballPlayer> searched = new ArrayList();
+		
+		for(FootballPlayer player : list) {
+			if(player.getName().contains(keyword)) {
+				searched.add(player);
+			}
+		}
+		
+		List<FootballPlayer> search = list.stream().filter(f -> f.getName().contains(keyword)).toList();
+		
+		return search;
+		
+		
+		
+		
+		
+		
+	}
 }

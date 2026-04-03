@@ -32,4 +32,12 @@ public class FootballController {
 	public String deleteFootballPlayer(int id) {
 		return fs.deleteFootballPlayer(id);
 	}
+	
+	public void outputFootballPlayer() {
+		fs.outputFootballPlayer();
+	}
+	
+	public List<FootballPlayer> findFootballPlayer(String keyword) {
+		return fs.findFootballPlayer(keyword);
+	}
 }
