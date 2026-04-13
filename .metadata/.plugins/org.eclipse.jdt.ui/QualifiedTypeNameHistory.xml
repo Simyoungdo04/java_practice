@@ -27,16 +27,13 @@
     <fullyQualifiedTypeName name="com.kh.chap04.model.vo.Sandwich"/>
     <fullyQualifiedTypeName name="java.util.Iterator"/>
     <fullyQualifiedTypeName name="java.util.Map.Entry"/>
-    <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="java.net.InetAddress"/>
     <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
     <fullyQualifiedTypeName name="java.io.BufferedReader"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="com.kh.football.controller.FootballController"/>
-    <fullyQualifiedTypeName name="com.kh.football.model.service.FootballService"/>
     <fullyQualifiedTypeName name="com.kh.football.model.vo.FootballPlayer"/>
     <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
-    <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
     <fullyQualifiedTypeName name="com.kh.football.view.FootballView"/>
     <fullyQualifiedTypeName name="com.kh.football.functional.model.service.BinFilter"/>
     <fullyQualifiedTypeName name="com.kh.football.functional.model.dto.Material"/>
@@ -44,4 +41,20 @@
     <fullyQualifiedTypeName name="java.util.function.Predicate"/>
     <fullyQualifiedTypeName name="java.util.function.Supplier"/>
     <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
+    <fullyQualifiedTypeName name="java.io.BufferedWriter"/>
+    <fullyQualifiedTypeName name="java.io.FileWriter"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="com.kh.football.model.service.FootballService"/>
+    <fullyQualifiedTypeName name="com.kh.football.model.dto.FootballPlayerDto"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="com.kh.football.controller.BoardController"/>
+    <fullyQualifiedTypeName name="com.kh.football.model.service.BoardService"/>
+    <fullyQualifiedTypeName name="com.kh.football.view.BoardView"/>
+    <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
+    <fullyQualifiedTypeName name="com.kh.species.model.dto.SpeciesDto"/>
+    <fullyQualifiedTypeName name="java.sql.Statement"/>
+    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="java.lang.ClassNotFoundException"/>
+    <fullyQualifiedTypeName name="com.kh.species.controller.SpeciesController"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
 </qualifiedTypeNameHistroy>
