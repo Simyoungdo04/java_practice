@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <comment>CAT SQL</comment>
+
+    <entry key="insertCat">
+        INSERT
+          INTO
+               CAT
+               (
+               CAT_NAME
+             , CAT_GENDER
+             , CAT_WEIGHT
+               )
+        VALUES
+               (
+               ?
+             , ?
+             , ?
+               )
+    </entry>
+    
+    <entry key="selectCatList">
+    	SELECT
+    	  	   CAT_ID
+    	  	 , CAT_NAME
+    	  	 , CAT_GENDER
+    	  	 , CAT_WEIGHT
+    	  	 , CAT_BIRTH
+    	  FROM
+    	  	   CAT
+    	 ORDER
+    	 	BY
+    	 	   CAT_ID DESC
+    </entry>
+
+</properties>
