@@ -15,7 +15,7 @@ public class CatTemplate {
 
     static {
         try {
-            prop.load(new FileInputStream("resources/connection.properties"));
+            prop.load(new FileInputStream("resources/connectionn.properties"));
             Class.forName("oracle.jdbc.driver.OracleDriver");
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();

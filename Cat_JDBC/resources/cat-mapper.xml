@@ -8,13 +8,15 @@
           INTO
                CAT
                (
-               CAT_NAME
+               CAT_ID
+             , CAT_NAME
              , CAT_GENDER
              , CAT_WEIGHT
                )
         VALUES
                (
-               ?
+               SEQ_CAT.NEXTVAL
+             , ?
              , ?
              , ?
                )
@@ -27,8 +29,11 @@
     	  	 , CAT_GENDER
     	  	 , CAT_WEIGHT
     	  	 , CAT_BIRTH
+    	  	 , CAT_KEEPER_NAME
     	  FROM
     	  	   CAT
+    	  JOIN
+    	  	   CAT_KEEPER USING(CAT_KEEPER_ID)
     	 ORDER
     	 	BY
     	 	   CAT_ID DESC

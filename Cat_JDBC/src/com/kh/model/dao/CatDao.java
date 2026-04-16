@@ -43,7 +43,9 @@ public class CatDao {
 		try(PreparedStatement pstmt = conn.prepareStatement(prop.getProperty("selectCatList"));
 			ResultSet rset = pstmt.executeQuery()) {
 			while(rset.next()) {
-				Cat c = new Cat(rset.getInt("CAT_ID"), rset.getString("CAT_NAME"), rset.getString("CAT_GENDER"), rset.getDouble("CAT_WEIGHT"), rset.getDate("CAT_BIRTH"));
+				Cat c = new Cat(rset.getString("CAT_ID"), rset.getString("CAT_NAME"),
+				 				rset.getString("CAT_GENDER"), rset.getDouble("CAT_WEIGHT"), 
+				 				rset.getDate("CAT_BIRTH"), rset.getString("CAT_KEEPER_NAME"));
 				cats.add(c);
 			}
 		} catch(SQLException e) {
