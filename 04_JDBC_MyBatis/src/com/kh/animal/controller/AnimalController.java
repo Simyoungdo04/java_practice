@@ -22,4 +22,12 @@ public class AnimalController {
 	public List<AnimalDto> findByKeyword(String keyword) {
 		return new AnimalService().findByKeyword(keyword);
 	}
+	
+	public int updateAnimal(AnimalDto animal) {
+		return new AnimalService().updateAnimal(animal);
+	}
+	
+	public int deleteAnimal(String animalId) {
+		return new AnimalService().deleteAnimal(animalId);
+	}
 }
