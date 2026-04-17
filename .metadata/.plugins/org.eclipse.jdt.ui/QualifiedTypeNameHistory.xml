@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="com.kh.chap04.model.vo.Sandwich"/>
-    <fullyQualifiedTypeName name="java.util.Iterator"/>
-    <fullyQualifiedTypeName name="java.util.Map.Entry"/>
     <fullyQualifiedTypeName name="java.net.InetAddress"/>
     <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
     <fullyQualifiedTypeName name="java.io.BufferedReader"/>
@@ -57,7 +53,11 @@
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="com.kh.animal.model.dto.AnimalDto"/>
     <fullyQualifiedTypeName name="com.kh.animal.model.dao.AnimalDao"/>
+    <fullyQualifiedTypeName name="com.kh.animal.model.dto.KeeperDto"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="com.kh.animal.controller.KeeperController"/>
     <fullyQualifiedTypeName name="com.kh.animal.model.service.AnimalService"/>
     <fullyQualifiedTypeName name="com.kh.animal.common.Template"/>
+    <fullyQualifiedTypeName name="org.apache.ibatis.jdbc.SQL"/>
     <fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSession"/>
 </qualifiedTypeNameHistroy>
