@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="memberMapper">
+	
+	<insert id="signUp" parameterType="deliMember">
+		INSERT
+		  INTO
+		  	   DELI_MEMBER
+		VALUES
+			   (
+			   SEQ_MEMBER_NO.NEXTVAL
+			 , #{memberId}
+			 , #{memberPw}
+			 , #{memberName}
+			 , #{address}
+			 , SYSDATE
+			   )
+	</insert>
+	
+	<sql id="memberSelect">
+		SELECT
+			   MEMBER_ID
+			 , MEMBER_NAME
+			 , ADDRESS
+		  FROM
+		  	   DELI_MEMBER
+	</sql>
+	
+	<select id="login" resultType="deliMember">
+		<include refid="memberSelect"/>
+		 WHERE
+		 	   MEMBER_ID = #{memberId}
+		   AND
+		 	   MEMBER_PW = #{memberPw}
+	</select>
+	
+	<select id="idCheck" resultType="deliMember">
+		<include refid="memberSelect"/>
+		 WHERE
+		 	   MEMBER_ID = #{memberId}
+	</select>
+	
+</mapper>
