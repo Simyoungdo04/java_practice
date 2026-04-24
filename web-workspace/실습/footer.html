@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>doc</title>
+    <style>
+        footer, div, p{
+            border: 1px solid red;
+            box-sizing: border-box;
+        }
+        footer{
+            width: 1200px;
+            height: 160px;
+        }
+
+        /**/
+
+        footer{
+            background-color: #eeeeee;
+            padding-top: 40px;
+            display: flex;
+        }
+        #footer_wrap{
+            width: 1200px;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            padding-bottom: 39px;
+        }
+        #footer_logo{
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+        }
+        #footer_1>p{
+            font-size: 12px;
+            padding-right: 40px;
+            color: #5c5c5c;
+        }
+        #footer_2>a{
+            text-decoration: none;
+            color: #3a3a3a;
+            font-weight: 600;
+            padding: 40px;
+            
+            &:hover{
+                color: #3939ff;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <footer>
+        <div id="footer_logo">
+            Cat.
+        </div>
+        <div id="footer_wrap">
+            <div id="footer_1">
+                <p>© 2026 0DO</p>
+            </div>
+            <div id="footer_2">
+                <a href="#">이용약관</a>
+                <a href="#">개인정보처리방침</a>
+                <a href="#">문의하기</a>
+                <a href="#">도움</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

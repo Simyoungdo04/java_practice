@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>시작</title>
+</head>
+<body>
+    <!--
+        시맨틱(Semantic) 태그 == 의미가 있는 태그
+    -->
+
+    영역을 나눌 때 사용하는 요소 => div
+    <div>메뉴</div>
+    <div>제목</div>
+    <div>바닥</div>
+
+    <p>
+        사람이 봤을때는 여기는 뭐구나 싶은데 HTML만 놓고 따지면 다 똑같은 div
+    </p>
+
+    <pre>
+        div의 요소의 경우 아무런 의미가 없기 때문에
+        HTML5에서 의미있는 태그를 좀 쓰자 하면서 나온 태그들
+        ==> 시맨틱 태그
+        
+        1. 가독성이 좋음(태그명만 봐도 구조를 파악)
+        2. SEO(검색엔진최적화) 구글봇이 어디가 뭐하는 영역인지 이해함
+        3. 웹접근성 (스크린리더가 읽어줌)
+    </pre>
+
+    <h3>div vs 시맨틱태그 차이 알아보기</h3>
+
+    <h4>1. div로 나누기</h4>
+
+    <div>
+        <div>로고들어감</div>
+        <div>
+            <div>홈</div>
+            <div>공지사항</div>
+            <div>로그인</div>
+        </div>
+        <div>메인컨텐츠</div>
+        <div>copyright~~</div>
+    </div>
+
+    <hr>
+
+    <h4>시맨틱태그로 변경</h4>
+
+    <header>로고</header>
+    <nav>
+        <div>홈</div>
+        <div>로그인</div>
+        <div>회원가입</div>
+    </nav>
+    <main>메인</main>
+    <footer>copyright</footer>
+
+    <h3>시맨틱 태그 종류</h3>
+
+    <h4>* header : 머리, 로고/사이트제목/상단메뉴(로그인,회원가입,검색창)</h4>
+    <header>
+        <h3>kh kh kh</h3>
+        <p>1234567890</p>
+    </header>
+
+    <h4>* nav : 네비게이션, 바로가기 메뉴링크들</h4>
+    <nav>
+        <a href="#">123</a> |
+        <a href="#">456</a> |
+        <a href="#">789</a> |
+        <a href="#">0-=</a> |
+        <a href="#">qwe</a> |
+    </nav>
+
+    <h4>* main : 본문, 페이지의 핵심콘텐츠(한 페이지당 딱 한개만쓰자)</h4>
+    <main>진짜 본문 내용이 들어감</main>
+
+    <h4>* section : 구분되는 섹션(주제별로 나눌때)</h4>
+    <section>
+        <h3>이번 주만 떨이로 팜</h3>
+        <p>실비김치 2kg</p>
+    </section>
+
+    <section>
+        <h3>~~~~~</h3>
+        <p>asdfasdf</p>
+    </section>
+
+    <!--
+        secsion은 의미상 하나의 덩어리 일 때 사용하고
+        div는 그냥 나누고 싶을 때 사용
+    -->
+
+    <h4>* article : 떼놓고 봐도 말이 되는 것들 => 광고 같은 거</h4>
+    
+    <article>
+        <h3>블랙박스 사세요</h3>
+        <p>4채널임 좋음 근데 비쌈</p>
+    </article>
+
+    <h4>* aside : 본문이랑 관련은 있는데 부수적인 것들(사이드바)</h4>
+    <aside>
+        <h3>실시간 트렌드</h3>
+        <ol>
+            <li>1. 아토</li>
+            <li>2. 두리</li>
+            <li>3. 뭉치</li>
+        </ol>
+    </aside>
+
+    <h4>* footer : 하단부, 저작권/연락처/회사정보/개인정보처리방침/이용약관</h4>
+
+    <footer>
+        <p>아토 | 고양이 | 123123123123</p>
+        <p>개인정보책임자 : 두리</p>
+        <p>Copyright @ 2026뭉치 All right reserved.</p>
+    </footer>
+
+</body>
+</html>

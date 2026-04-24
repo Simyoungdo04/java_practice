@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>asdfasdfasddf</head>title>
+    <style>
+        body{
+            background-color: rgb(27, 27, 27);
+            color: white;
+        }
+
+        #bg-color{
+            border: 50px solid white;
+            padding: 30px;
+            background-color: black;
+            width: 50%;
+            /* div 요소의 content영역의 가로길이를 부모요소의 50%로 지정*/
+            box-sizing: border-box;
+            /* 가로길이 설정을 border 영역까지 포함하는 속성 */
+        }
+
+        #bg-image{
+            border: 1px solid red;
+            width: 70%;
+            height: 800px;
+            background-image: url("https://t3.ftcdn.net/jpg/17/83/64/44/360_F_1783644427_Uanf2gj3s8SiQDnJ58ImTsAT3uUl6MhP.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: auto;
+            background-attachment: fixed;
+        }
+
+        .test{
+            border: 40px dashed white;
+            margin: 40px;
+            padding: 40px;
+            background-color: lightslategray;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>배경관련 스타일(background-)</h1>
+
+    <h3>background-color : 배경색을 지정하는 속성</h3>
+
+    <div id="bg-color">7</div>
+
+    <h3>배경으로 이미지 넣기</h3>
+
+    <pre>
+        선택자 {
+            background-image: url(이미지경로)
+            background-repeat : repeat / repeat-x / repeat-y / no-repeat
+            background-size : auto / contain / over / 숫자(%)
+            background-position : left / right / center;
+                                  top / center / bottom;
+            background-attachment : scroll / fixed;
+        }
+    </pre>
+
+    <div id="bg-image"></div>
+
+    <hr>
+
+    <h3>background-clip : 배경범위 지정</h3>
+
+    <div id="div1" class="test">
+        봄혼라홰으안관의 다캉염감문그나, 로눅 우란나멤 호뎌랑은 옥드끼둘센랄 도알으뎄듬간가.
+        즂옹헌기 궁안 무전아카김알 객둔진과 정겨이 구라다에서 운헉햐간,
+        나진우도 까에불너 기힐할므하에.
+    </div>
+    <div id="div2" class="test">
+        봄혼라홰으안관의 다캉염감문그나, 로눅 우란나멤 호뎌랑은 옥드끼둘센랄 도알으뎄듬간가.
+        즂옹헌기 궁안 무전아카김알 객둔진과 정겨이 구라다에서 운헉햐간,
+        나진우도 까에불너 기힐할므하에.
+    </div>
+    <div id="div3" class="test">
+        봄혼라홰으안관의 다캉염감문그나, 로눅 우란나멤 호뎌랑은 옥드끼둘센랄 도알으뎄듬간가.
+        즂옹헌기 궁안 무전아카김알 객둔진과 정겨이 구라다에서 운헉햐간,
+        나진우도 까에불너 기힐할므하에.
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

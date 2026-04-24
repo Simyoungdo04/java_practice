@@ -1,0 +1,17 @@
+#header_2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo{
+    text-decoration: none;
+    color:  #bebebe;
+    font-weight: 800;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+#close, #open{
+    color: #3939ff;
+}

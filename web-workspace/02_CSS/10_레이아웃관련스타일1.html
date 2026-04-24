@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>1번</title>
+    <style>
+        .size-test{
+            border: 10px solid brown;
+            height: 200px;
+            background-color: aqua;
+        }
+
+        #test1{
+            width: 40%;
+        }
+        #test2{
+            width: 400px;
+        }
+
+        .nemo{
+            width: 150px;
+            height: 150px;
+            border: 1px solid black;
+        }
+
+        .red{
+            background-color: red;
+        }
+        .orange{
+            background-color: orangered;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+        .green{
+            background-color: forestgreen;
+        }
+        .blue{
+            background-color: blue;
+        }
+
+        .inline{
+            display: inline;
+        }
+
+        .ib{
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        블럭요소    : 한 줄 단위로 영역이 잡힘
+        인라인요소  : content크기만큼만 영역이 잡힘
+    -->
+    <h3>width, height</h3>
+
+    <p>content영역의 크기를 조절하는 속성</p>
+
+    <div id="size">
+        <div id="test1" class="size-test"></div>
+        <div id="test2" class="size-test"></div>
+    </div>
+
+    <hr>
+
+    <h2>display : 화면 배치 방법 변경</h2>
+
+    <pre>
+        선택자{
+            display : inline / *block / *inline-block / *hidden / *flex
+                    / table-cell / ...
+        }
+    </pre>
+
+    <p>기본</p>
+    <div class="nemo red">1</div>
+    <div class="nemo orange">2</div>
+    <div class="nemo yellow">3</div>
+    <div class="nemo green">4</div>
+    <div class="nemo blue">5</div>
+
+    <hr>
+    <p>inline</p>
+    <div class="nemo inline red">1</div>
+    <div class="nemo inline orange">2</div>
+    <div class="nemo inline yellow">3</div>
+    <div class="nemo inline green">4</div>
+    <div class="nemo inline blue">5</div>
+
+    <strong>display : inline == width, height 속성 적용 x</strong>
+
+    <hr>
+
+    <div class="nemo ib red">1</div
+    ><div class="nemo ib orange">2</div><!--
+    --><div class="nemo ib yellow">3</div>
+    <div class="nemo ib green">4</div>
+    <div class="nemo ib blue">5</div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

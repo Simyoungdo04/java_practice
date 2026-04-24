@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>float</title>
+    <style>
+        .float{
+            width: 100px;
+            height: 100px;
+            border : 1px solid white;
+            float: left;
+        }
+
+        body{
+            background-color: black;
+            color: white;
+        }
+
+        .test{
+            width: 150px;
+            height: 150px;
+            border-radius: 75px;
+        }
+
+        .red{
+            background-color: red;
+            /*display: none;       안 보이고 공간을 차지 하지 않음*/
+            visibility: hidden; /* 안 보이지만 공간을 차지함 */
+        }
+        .orange{
+            background-color: orange;
+        }
+        .green{
+            background-color: green;
+        }
+
+        #sinho{
+            border: 1px solid white;
+            width: 150px;
+        }
+
+        .outer{
+            border: 1px solid white;
+            position: relative; /* 얘가 자식 요소들의 기준점이 됨 */
+            height: 400px;
+        }
+
+        .position{
+            border: 1px solid yellow;
+        }
+
+        #p1{
+            width: 300px;
+            height: 300px;
+            background-color: crimson;
+            position: absolute; /* 기준점을 기준으로 배치하겠음 */
+            left: 100px;
+            top: 10px;
+        }
+        #p2{
+            width: 200px;
+            height: 200px;
+            background-color: royalblue;
+            position: absolute;
+            left: 150px;
+            top: 70px;
+            transform: rotate(10deg);
+        }
+        #p3{
+            width: 100px;
+            height: 100px;
+            background-color: forestgreen;
+            position: absolute;
+            left: 80px;
+            top: 90px;
+            transform: rotate(-20deg);
+        }
+
+        #fix{
+            position: fixed;
+            width: 170px;
+            height: 600px;
+            background-color: yellowgreen;
+            top: 60px;
+            right: 40px;
+        }
+
+        .z-test{
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            border: 1px solid white;
+        }
+
+        #z1{
+            background-color: lightgoldenrodyellow;
+            top: 100px;
+            left: 100px;
+            z-index: 1;
+        }
+
+        #z2{
+            background-color: palegoldenrod;
+            top: 50px;
+            left: 50px;
+            z-index: 2;
+        }
+
+        #z3{
+            background-color: goldenrod;
+        }
+    </style>
+</head>
+<body>
+    <h3>float</h3>
+
+    <div class="float">1</div>
+    <div class="float">2</div>
+    <div class="float">3</div>
+    <div class="float">4</div>
+    <div class="float">5</div>
+    <br clear="both">
+
+    <h4>이거 사실 안 좋음</h4>
+    
+    <hr>
+
+    <h4>배치</h4>
+
+    <div id="sinho">
+        <div class="red test"></div>
+        <div class="orange test"></div>
+        <div class="green test"></div>
+    </div>
+
+    <hr>
+
+    <h3>position</h3>
+
+    <div class="outer">
+        <div class="position" id="p1">1번 요소</div>
+        <div class="position" id="p2">2번 요소</div>
+        <div class="position" id="p3">3번 요소</div>
+    </div>
+
+    <div id="fix">날따라와라</div>
+
+    <div style="width: 100%; height: 20px; background-color: yellow;"></div>
+
+    <h3>z-index</h3>
+    <p>페이지안에 요소를 위로 쌓는 속성</p>
+
+    <div class="outer">
+        <div id="z1" class="z-test">요소1</div>
+        <div id="z2" class="z-test">요소2</div>
+        <div id="z3" class="z-test">요소3</div>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
